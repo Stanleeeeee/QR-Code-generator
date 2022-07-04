@@ -10,7 +10,7 @@ const QrCode = () => {
     const image = canvas.toDataURL('image/png');
     const anchor = document.createElement('a');
     anchor.href = image;
-    anchor.download = `qr-code.png`;
+    anchor.download = 'qr-code.png';
     document.body.appendChild(anchor);
     anchor.click();
     document.body.removeChild(anchor);
