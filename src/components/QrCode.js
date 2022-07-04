@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { QRCodeCanvas } from "qrcode.react";
 
 const QrCode = () => {
   const [url, setUrl] = useState("");
+  const qrRef = useRef();
 
   const downloadQRCode = (e) => {
     e.preventDefault();
@@ -24,7 +25,7 @@ const QrCode = () => {
   );
   return (
     <div className="qrcode__container">
-      <div>{qrcode}</div>
+      <div ref={qrcode}>{qrcode}</div>
       <div className="input__group">
         <form onSubmit={downloadQRCode}>
           <label>Enter URL</label>
@@ -32,7 +33,7 @@ const QrCode = () => {
             type="text"
             value={url}
             onChange={qrCodeEncoder}
-            placeholder="https://..."
+            placeholder="Enter your URL here"
           />
           <button type="submit" disabled={!url}>
             Download QR code
