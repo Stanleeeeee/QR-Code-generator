@@ -34,14 +34,13 @@ const QrCode = () => {
       <div ref={qrRef}>{qrcode}</div>
       <div className="input__group">
         <form htmlFor onSubmit={downloadQRCode}>
-          <label>Enter URL
+          <label htmlFor='enter-url'>Enter URL</label>
           <input
             type="text"
             value={url}
             onChange={qrCodeEncoder}
             placeholder="Enter your URL here"
           />
-        </label>
           <button type="submit" disabled={!url}>
             Download QR code
           </button>
