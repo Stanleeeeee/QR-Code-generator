@@ -14,8 +14,8 @@
 
 ## Live Demo (if available)
 
-[Heroku Demo Link](https://livedemo.com)
-[Netlify Demo Link](https://livedemo.com)
+[Heroku Demo Link](https://qr-code89.herokuapp.com/)
+[Netlify Demo Link](https://stanqrcode.netlify.app/)
 
 
 ## Getting Started
