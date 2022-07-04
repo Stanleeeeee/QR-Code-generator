@@ -1,15 +1,16 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# QR Code Generator
 
-> Description the project.
+> Quick Response (QR) code generator is to translate data from images to text. In this project, I built a QR code using the JavaScript library, React.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- CSS
+- Javascript
+- React
+- Redux
 
 ## Live Demo (if available)
 
@@ -17,12 +18,6 @@
 
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
