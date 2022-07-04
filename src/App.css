@@ -61,10 +61,6 @@ button {
     padding: 0;
   }
 
-  input {
-    margin: 0;
-  }
-
   .qrcode__container {
     display: flex;
     align-items: center;

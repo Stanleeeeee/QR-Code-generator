@@ -14,7 +14,7 @@ const QrCode = () => {
     document.body.appendChild(anchor);
     anchor.click();
     document.body.removeChild(anchor);
-    setUrl("");
+    setUrl('');
   };
   const qrCodeEncoder = (e) => {
     setUrl(e.target.value);
@@ -22,26 +22,26 @@ const QrCode = () => {
 
   const qrcode = (
     <QRCodeCanvas
-      id='qrCode'
+      id="qrCode"
       value={url}
       size={300}
-      bgColor= '#00ff00'
-      level= 'H'
+      bgColor="#00ff00"
+      level="H"
     />
   );
   return (
-    <div className='qrcode__container'>
+    <div className="qrcode__container">
       <div ref={qrRef}>{qrcode}</div>
-      <div className='input__group'>
+      <div className="input__group">
         <form htmlFor onSubmit={downloadQRCode}>
           <label>Enter URL</label>
           <input
-            type='text'
+            type="text"
             value={url}
             onChange={qrCodeEncoder}
-            placeholder='Enter your URL here'
+            placeholder="Enter your URL here"
           />
-          <button type='submit' disabled={!url}>
+          <button type="submit" disabled={!url}>
             Download QR code
           </button>
         </form>
